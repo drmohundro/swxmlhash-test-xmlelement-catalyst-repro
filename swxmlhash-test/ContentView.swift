@@ -40,7 +40,7 @@ struct ContentView: View {
     
     init() {
         let xml = XMLHash.parse(xmlContent)
-        let element: XMLElement = xml["root"]["catalog"]["book"][0]["author"].element
+        let element: SWXMLHash.XMLElement? = xml["root"]["catalog"]["book"][0]["author"].element
         
         firstAuthor =  element!.text
     }
