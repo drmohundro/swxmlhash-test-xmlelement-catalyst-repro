@@ -1,0 +1,16 @@
+PODS:
+  - SWXMLHash (6.0.0)
+
+DEPENDENCIES:
+  - SWXMLHash
+
+SPEC REPOS:
+  trunk:
+    - SWXMLHash
+
+SPEC CHECKSUMS:
+  SWXMLHash: 9d851ed3edf48ec2bd0db98f0cda0ad4136d75e3
+
+PODFILE CHECKSUM: be5eadeeea030f1c115d488ad5af529c7cc32386
+
+COCOAPODS: 1.11.2

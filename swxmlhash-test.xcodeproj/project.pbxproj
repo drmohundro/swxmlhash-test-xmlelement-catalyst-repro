@@ -11,14 +11,19 @@
 		63AE2C5627DD40A2000CEB80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE2C5527DD40A2000CEB80 /* ContentView.swift */; };
 		63AE2C5827DD40A3000CEB80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AE2C5727DD40A3000CEB80 /* Assets.xcassets */; };
 		63AE2C5B27DD40A3000CEB80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AE2C5A27DD40A3000CEB80 /* Preview Assets.xcassets */; };
+		AB507EBB143633453E6E0C00 /* Pods_swxmlhash_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DCED7240E10E2ECC766A8F /* Pods_swxmlhash_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29DCED7240E10E2ECC766A8F /* Pods_swxmlhash_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swxmlhash_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		630E4E0A27DD42C700CC1981 /* swxmlhash-test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "swxmlhash-test.entitlements"; sourceTree = "<group>"; };
 		63AE2C5027DD40A2000CEB80 /* swxmlhash-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swxmlhash-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AE2C5327DD40A2000CEB80 /* swxmlhash_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swxmlhash_testApp.swift; sourceTree = "<group>"; };
 		63AE2C5527DD40A2000CEB80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63AE2C5727DD40A3000CEB80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63AE2C5A27DD40A3000CEB80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E8800FF0370C64488AC4296 /* Pods-swxmlhash-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swxmlhash-test.debug.xcconfig"; path = "Target Support Files/Pods-swxmlhash-test/Pods-swxmlhash-test.debug.xcconfig"; sourceTree = "<group>"; };
+		CB506055ABF3EB622F34DCAD /* Pods-swxmlhash-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swxmlhash-test.release.xcconfig"; path = "Target Support Files/Pods-swxmlhash-test/Pods-swxmlhash-test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB507EBB143633453E6E0C00 /* Pods_swxmlhash_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		287DDC5627CC67B40D5667BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29DCED7240E10E2ECC766A8F /* Pods_swxmlhash_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63AE2C4727DD40A2000CEB80 = {
 			isa = PBXGroup;
 			children = (
 				63AE2C5227DD40A2000CEB80 /* swxmlhash-test */,
 				63AE2C5127DD40A2000CEB80 /* Products */,
+				BC2B50E9F89DF5720E99D33F /* Pods */,
+				287DDC5627CC67B40D5667BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +67,7 @@
 		63AE2C5227DD40A2000CEB80 /* swxmlhash-test */ = {
 			isa = PBXGroup;
 			children = (
+				630E4E0A27DD42C700CC1981 /* swxmlhash-test.entitlements */,
 				63AE2C5327DD40A2000CEB80 /* swxmlhash_testApp.swift */,
 				63AE2C5527DD40A2000CEB80 /* ContentView.swift */,
 				63AE2C5727DD40A3000CEB80 /* Assets.xcassets */,
@@ -67,6 +84,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BC2B50E9F89DF5720E99D33F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E8800FF0370C64488AC4296 /* Pods-swxmlhash-test.debug.xcconfig */,
+				CB506055ABF3EB622F34DCAD /* Pods-swxmlhash-test.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63AE2C5E27DD40A3000CEB80 /* Build configuration list for PBXNativeTarget "swxmlhash-test" */;
 			buildPhases = (
+				2CA0CDEFE9C096D30C2ACA50 /* [CP] Check Pods Manifest.lock */,
 				63AE2C4C27DD40A2000CEB80 /* Sources */,
 				63AE2C4D27DD40A2000CEB80 /* Frameworks */,
 				63AE2C4E27DD40A2000CEB80 /* Resources */,
+				07929CE5E3D6307EF24E539B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07929CE5E3D6307EF24E539B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swxmlhash-test/Pods-swxmlhash-test-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-swxmlhash-test/Pods-swxmlhash-test-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-swxmlhash-test/Pods-swxmlhash-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2CA0CDEFE9C096D30C2ACA50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swxmlhash-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63AE2C4C27DD40A2000CEB80 /* Sources */ = {
@@ -263,12 +333,16 @@
 		};
 		63AE2C5F27DD40A3000CEB80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E8800FF0370C64488AC4296 /* Pods-swxmlhash-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swxmlhash-test/swxmlhash-test.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swxmlhash-test/Preview Content\"";
+				DEVELOPMENT_TEAM = KZ39R3CMXX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -283,6 +357,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mohundro.swxmlhash-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,12 +366,16 @@
 		};
 		63AE2C6027DD40A3000CEB80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB506055ABF3EB622F34DCAD /* Pods-swxmlhash-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "swxmlhash-test/swxmlhash-test.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"swxmlhash-test/Preview Content\"";
+				DEVELOPMENT_TEAM = KZ39R3CMXX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -311,6 +390,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mohundro.swxmlhash-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
